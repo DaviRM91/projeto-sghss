@@ -183,11 +183,13 @@ Foi utilizado o Postman para testar os endpoints da API.
 curl -X POST http://localhost:8080/api/pacientes \
   -H "Content-Type: application/json" \
   -d '{
-    "nome": "João Silva",
-    "cpf": "123.456.789-00",
-    "email": "joao@example.com",
-    "telefone": "(11) 98765-4321"
-  }'
+  "nome": "Ana Carolina Souza",
+  "cpf": "12345678901",
+  "dataNascimento": "1985-06-15",
+  "email": "ana.souza@email.com",
+  "telefone": "(11) 91234-5678",
+  "endereco": "Rua das Flores, 123, Apto 45, São Paulo - SP"
+}'
 ```
 
 ### Listar Pacientes
@@ -215,11 +217,11 @@ curl -X DELETE /api/consultas/cancelar/{consultaId}
 ```bashcurl -X POST http://localhost:8080/api/medicos \
   -H "Content-Type: application/json" \
   -d '{
-  "nome": "Dr. João",
-  "crm": "CRM-12345",
+  "nome": "Dr. João Mendes",
+  "crm": "CRM-12345/SP",
   "especialidade": "Cardiologia",
-  "email": "joao@medico.com",
-  "telefone": "(11) 99888-7777"
+  "email": "joao.mendes@cardiologia.com",
+  "telefone": "(11) 98765-4321"
 }'
 ```
 ### Listar medicos
