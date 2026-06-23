@@ -1,4 +1,8 @@
 package com.vidaplus.sghss.repository;
 
-public interface MedicoRepository {
+import com.vidaplus.sghss.model.Medico;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface MedicoRepository extends JpaRepository<Medico, Long> {
+
 }

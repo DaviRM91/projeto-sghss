@@ -10,7 +10,7 @@ import java.util.List;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class medico {
+public class Medico {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -30,4 +30,4 @@ public class medico {
     private List<Consulta> consultas;
 }
 
-}
+
